@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.web.WebView?>
+
+<BorderPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.ntua.trapezoid.ui.MainApp">
+	<center>
+		<VBox BorderPane.alignment="CENTER">
+			<children>
+				<HBox spacing="30.0" VBox.vgrow="ALWAYS">
+					<children>
+						<VBox HBox.hgrow="ALWAYS">
+							<children>
+								<WebView fx:id="heatmapWebView" minHeight="-1.0" minWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS" />
+								<Label text="Heatmap" />
+							</children>
+						</VBox>
+						<Separator orientation="VERTICAL" prefHeight="200.0" />
+						<VBox HBox.hgrow="ALWAYS">
+							<children>
+								<WebView fx:id="bubbleWebView" minHeight="-1.0" minWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS" />
+								<Label text="Bubble2D" />
+							</children>
+						</VBox>
+					</children>
+					<VBox.margin>
+						<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+					</VBox.margin>
+				</HBox>
+			</children>
+			<padding>
+				<Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+			</padding>
+		</VBox>
+	</center>
+</BorderPane>

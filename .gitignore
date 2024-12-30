@@ -1,0 +1,9 @@
+javafx-sdk-23.0.1/
+target/
+.metals
+.theia
+.bloop
+.idea
+.settings
+.classpath
+.project
